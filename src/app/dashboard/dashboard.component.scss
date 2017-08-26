@@ -1,27 +1,40 @@
+// row account, activity, post and message
+.row-account{
+    height: 20%;
+}
+.row-activity-report{
+    height: 40%;
+}
+.row-post-report{
+    height: 20%;
+}
+.row-message-report{
+    height: 20%;
+}
+
+// label report, activity
+.label-report{
+    width: 100%;
+    height: 40%;
+    margin-top: 15px;
+    background: #eee;
+}
 
 .label-account{
     width: 100%;
-    height: 20%;
+    height: 100%;
     background: #eee; 
 }
-.report{
-    width: 100%;
-    height: 40%;
-}
-.label-report{
-    width: 20%;
-    height: 40%;
-    background: #eee;
-}
 
-.label-post{
-    width: 100%;
-    height: 40%;
-    background: #eee;
-}
+// .label-post{
+//     width: 100%;
+//     height: 40%;
+//     background: #eee;
+// }
 
-.label-message{
-    height: 20%;
-    width: 100%;
-    background: #eee;
-}
+// .label-message{
+//     height: 20%;
+//     width: 100%;
+//     background: #eee;
+// }
+
