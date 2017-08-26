@@ -1,0 +1,127 @@
+<clr-main-container>
+    <clr-header class="header">
+        <div class="branding">
+            <a href="..." class="nav-link">
+                <clr-icon shape="vm-bug"></clr-icon>
+                <span class="title">Project Clarity</span>
+            </a>
+        </div>
+        <div class="header-nav">
+            <a href="..." class="nav-link nav-icon">
+                <clr-icon shape="cloud"></clr-icon>
+            </a>
+            <a href="..." class="active nav-link nav-icon">
+                <clr-icon shape="folder"></clr-icon>
+            </a>
+        </div>
+        <form class="search">
+            <label for="search_input">
+            <input id="search_input" type="text" placeholder="Search for keywords...">
+        </label>
+        </form>
+        <div class="header-actions">
+            <clr-dropdown>
+                <button class="nav-icon" clrDropdownTrigger>
+                <clr-icon shape="user"></clr-icon>
+                <clr-icon shape="caret down"></clr-icon>
+            </button>
+                <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
+                    <a href="..." clrDropdownItem>About</a>
+                    <a href="..." clrDropdownItem>Preferences</a>
+                    <a href="..." clrDropdownItem>Log out</a>
+                </clr-dropdown-menu>
+            </clr-dropdown>
+        </div>
+    </clr-header>
+
+    <div class="content-container">
+
+        <nav class="sidenav" [clr-nav-level]="1">
+
+            <section class="sidenav-content">
+
+                <section class="nav-group">
+                    <strong class="title-strong">MAIN NAVIGATION</strong>
+                    <hr width="100%" align="center" />
+                    <clr-vertical-nav class="sidenav-vertical">
+                        <ul class="nav-list">
+                            <a clrVerticalNavLink class="nav-link" [routerLink]="['/dashboard']" routerLinkActive="active">
+                                <img class="nav-link-imgmain" src="./images/icon-main/dashboard.svg">
+                                Dashboard</a>
+
+                            <a clrVerticalNavLink class="nav-link" [routerLink]="['/about']" routerLinkActive="active">
+                                <img class="nav-link-imgmain" src="./images/icon-main/instagram.svg">
+                            Instagram accounts</a>
+
+                            <a clrVerticalNavLink class="nav-link">
+                                <img class="nav-link-imgmain" src="./images/icon-main/logs.svg" width="25px" height="25px">    
+                            Logs</a>
+
+                            <a clrVerticalNavLink class="nav-link">
+                                <img class="nav-link-imgmain" src="./images/icon-main/proxy.svg">
+                            Proxy</a>
+                        </ul>
+                    </clr-vertical-nav>
+                </section>
+
+                <section class="nav-group">
+                    <strong class="title-strong"> INSTAGRAM TOOL</strong>
+                    <hr width="100%" align="center" />
+                    <clr-vertical-nav class="sidenav-vertical">
+                        <ul class="nav-list">
+
+                            <a class="nav-link">
+                                <img class="nav-link-imgmain" src="./images/icon-main/auto-flash.svg"> 
+                                Auto activity</a>
+
+                            <a class="nav-link">
+                                <img class="nav-link-imgmain" src="./images/icon-main/autopost.svg">
+                            Auto post</a>
+
+                            <a class="nav-link">
+                                <img class="nav-link-imgmain" src="./images/icon-main/autodirectmess.svg">
+                            Auto direct message</a>
+
+                            <a class="nav-link">
+                                <img class="nav-link-imgmain" src="./images/icon-main/search.svg">
+                            Instagram search</a>
+
+                            <a class="nav-link">
+                                <img class="nav-link-imgmain" src="./images/icon-main/download.svg">
+                            Instagram download</a>
+                        </ul>
+                    </clr-vertical-nav>
+                </section>
+
+                <section class="nav-group">
+                    <strong class="title-strong"> ADMIN AREA</strong>
+                    <hr width="100%" />
+                    <clr-vertical-nav class="sidenav-vertical">
+                        <ul class="nav-list">
+
+                            <a class="nav-link">
+                                    <img class="nav-link-imgmain" src="./images/icon-main/payment.svg"> 
+                                Payment management</a>
+
+                            <a class="nav-link">
+                                <img class="nav-link-imgmain" src="./images/icon-main/user.svg">
+                            User managment</a>
+
+                            <a class="nav-link">
+                                <img class="nav-link-imgmain" src="./images/icon-main/settings.svg">
+                            Setting</a>
+
+                        </ul>
+                    </clr-vertical-nav>
+                </section>
+            </section>
+        </nav>
+        <!-- call router-outlet -->
+        <div class="content-area">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+
+
+</clr-main-container>
