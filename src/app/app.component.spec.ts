@@ -18,7 +18,8 @@ describe('AppComponent', () => {
             declarations: [
                 AppComponent,
                 AboutComponent,
-                HomeComponent
+                HomeComponent,
+
             ],
             imports: [
                 ClarityModule.forRoot(),

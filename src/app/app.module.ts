@@ -9,13 +9,15 @@ import { ROUTING } from "./app.routing";
 import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { InstagramaccountComponent } from './instagramaccount/instagramaccount.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         AboutComponent,
         HomeComponent,
-        DashboardComponent
+        DashboardComponent,
+        InstagramaccountComponent
     ],
     imports: [
         BrowserAnimationsModule,
